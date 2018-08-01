@@ -1,0 +1,73 @@
+/*@font-face{
+    font-family: 'KaiTi';
+    src : url('../font/KT.ttf');
+}*/
+@font-face{
+    font-family: 'XiaoLi';
+    src : url('../font/XL.ttf');
+}
+body {
+    font-family: 'XiaoLi';
+    background: url(../pic/index.gif) no-repeat #000;
+    background-size: contain;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#movie{
+    width: 100%;
+    top:0;
+    left:0;
+    margin: 0;
+    position:fixed;
+}
+
+#para1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 2em;
+    position: relative;
+    box-sizing:border-box;
+    padding: 5% 20%;
+    margin: 15% 10%;
+    z-index:5;
+}
+
+#Reminding {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    font-size:1em;
+    -webkit-transform: translate(-50%,-50%);
+    color:lightgrey;
+}
+
+#buttons{
+    position:absolute;
+    visibility:hidden;
+    top:7px;
+    right:10px;
+    z-index:10;
+}
+
+.button{
+    border:0.5px solid rgba(255,255,255,0.8);
+    padding:2px;
+    margin-top:3px;
+    border-radius:3px;
+    background-color:rgba(0,0,0,0.8);
+    color:rgba(255,255,255,0.8);
+    font-size:2em;
+    display:inline;
+}
+
+.button:hover{
+    background-color:rgba(61,140,243,0.8);
+}
+
+*{
+    -webkit-tap-highlight-color:transparent;
+}
